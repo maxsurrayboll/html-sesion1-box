@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        .padre {
-            width: 500px;
-            height: 400px;
-            background-color: blueviolet;
-            display: block;
-        }
-        .hijo {
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            display: block;
-            padding: 50px;
-        }
-    </style>
 </head>
 <body>
-    <div class="padre">
-        <div class="hijo">
-            Hijo
-        </div>
+    <div class="block
+                w-[500px]
+                h-auto
+                bg-purple-700
+                mt-[50px]
+                mx-auto
+                pt-[50px]
+                shadow-[5px_-5px_-15px_-5px_rgb(10,23,197)]
+                ">
+        <div class="block 
+                    w-[200px] 
+                    h-[200px] 
+                    bg-green-500
+                    mx-auto
+                    mb-[50px]
+                    border-t-[10px] 
+                    border-double
+                    border-white
+                    rounded-full
+                    "></div>
+        <div class="block 
+                    w-[200px] 
+                    h-[200px] 
+                    bg-green-500
+                    mx-auto
+                    border-t-[10px] 
+                    border-double
+                    border-white
+                    rounded-br-[10px]
+                    rounded-bl-[10px]
+                    "></div>
     </div>
 </body>
 </html>
