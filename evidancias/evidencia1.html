@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Tarjeta</title>
+    <style>
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('inter/inter/inter.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('inter/inter/inter.ttf') format('truetype');
+            font-weight: 700;
+            font-display: swap;
+            font-style: bold;
+        }
+
+        /*estilo de receteo*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*color fondo*/
+        body{
+            background-color: #e9ebeb;
+                /*fuente*/
+            font-family: 'Inter', sans-serif;
+        }
+
+        /*BEM = Block___Element Modifier*/
+        .card{
+            display: block;
+            background-color: white;
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0px 3px 19px 2px rgba(122,122,122,0.9);
+        }
+
+        .card__companyname{
+            background-color: #3e3e40;
+            height: 100px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top-right-radius: 15px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 30px;
+            text-align: center;
+        }
+        .card__flag{
+            background-color: #76c4c1;
+            height: 50px;
+        }
+
+        .card__img{
+            /*las img son por defecto*/
+            display: block;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 0 auto;
+            margin-top: -85px;
+            border: white solid 7px;
+            border-radius: 50%;
+        }
+
+        .card__nombre{
+            display:block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 35px;
+            letter-spacing: 2px;
+        }
+
+        .card__nombre_apellido{
+            font-weight: bold;
+        }    
+        
+        .card__profesion{
+            display:block;
+            text-align: center;
+            margin-top: 5px;
+            color: #76c4c1;
+            font-size: 17px;
+        }
+        /*estilos de la tabla*/
+        .card__data{
+            margin: 40px auto;
+
+        }
+
+        .card_data--celda{
+            padding: 15px;
+        }
+
+        .card__data--atributo{
+            font-weight: bold;
+            color: #76c4c1;
+        }
+        </style>
+</head>
+<body>
+    <div class="card">
+        <!-- empresa -->
+        <div class="card__companyname">SENA CGMLTI</div>
+        <!--turquesa-->
+        <div class="card__flag"></div>
+        <!--imagen-->
+        <img src="retrato.jpg" alt="" class="card__img">
+        <div class="card__nombre">Lura <span class="card__nombre_apellido">Anderson</span> </div>
+        <div class="card__profesion">Web design y developer</div>
+
+        
+        <table class="card__data">
+        <tr>
+            <td class="card_data--celda card__data--atributo">ID</td>
+            <td class="card_data--celda">3932389273972</td>
+        </tr>
+
+
+        <tr>
+            <td class="card_data--celda card__data--atributo">DOB</td>
+            <td class="card_data--celda">00-00-0000</td>
+        </tr>
+
+
+        <tr>
+            <td class="card_data--celda card__data--atributo">phone</td>
+            <td class="card_data--celda">329808989</td>
+        </tr>
+
+
+        <tr>
+            <td class="card_data--celda card__data--atributo">Join</td>
+            <td class="card_data--celda">05-01-2023</td>
+        </tr>
+
+
+        <tr>
+            <td class="card_data--celda card__data--atributo">Expire</td>
+            <td class="card_data--celda">04-01-2024</td>
+        </tr>
+    </table>
+    </div>
+    
+</body>
+</html>
