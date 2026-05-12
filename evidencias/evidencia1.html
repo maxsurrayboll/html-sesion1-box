@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('Inter/Inter.ttf') format(truetype);
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('Inter/Inter.ttf') format(truetype);
+            font-weight: 700;
+            font-style: bold;
+            font-display: swap;
+        }
+        
+        *{margin: 0;
+        padding: 0;}
+
+        body{
+            background-color: #DEDFE1;
+            font-family: 'Inter';
+        }
+
+        .card {
+            display: block;
+            background-color: white;
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 4px 4px 5px 0px rgba(94,88,88,0.56);
+        }
+
+        .card_company {
+            width: auto;
+            height: 100px;
+            background-color: #3E3E40;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .card_flag {
+            width: auto;
+            height: 50px;
+            background-color: #76C4C1;
+        }
+
+        .card_img{
+            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto;
+            margin-top: -100px;
+            border: 8px solid #fff;
+            border-radius: 50%;
+        }
+        .card_nombre {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 35px;
+            letter-spacing: 2px;
+        }
+
+        .card_nombre--apellido {
+            font-weight: bold;
+        }
+
+        .card_profesion {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 17px;
+            color: #76C4C1;
+            letter-spacing: 3px;
+        }
+
+        .card_data{
+            margin: 40px auto;
+        }
+
+        .card_data--celda{
+            padding: 10px;
+        }
+
+        .card_data--celda--atributo{
+            font-weight: bold;
+            color: #76C4C1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card_company">
+            SENA CGMLTI
+        </div>
+        <div class="card_flag"></div>
+        <div class="">
+            <img class="card_img" src="./retrato.png" alt="">
+            <div class="card_nombre">Snoopy <span class="card_nombre--apellido">Dog</span></div>
+            <div class="card_profesion">Web Desing & Developer</div>
+            <table class="card_data">
+                <tr>
+                    <td class="card_data--celda card_data--celda--atributo">ID:</td>
+                    <td class="card_data--celda ">1021676397</td>
+                </tr>
+                <tr>
+                    <td class="card_data--celda card_data--celda--atributo">DOB</td>
+                    <td class="card_data--celda ">00-00-00</td>
+                </tr>
+                <tr>
+                    <td class="card_data--celda card_data--celda--atributo">PHONE:</td>
+                    <td class="card_data--celda ">(601) 123-4567</td>
+                </tr>
+                <tr>
+                    <td class="card_data--celda card_data--celda--atributo">JOIN</td>
+                    <td class="card_data--celda">29-01-26</td>
+                </tr>
+                <tr>
+                    <td class="card_data--celda card_data--celda--atributo">EXPIRED</td>
+                    <td class="card_data--celda ">29-04-27</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
