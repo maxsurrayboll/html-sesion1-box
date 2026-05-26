@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo{
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    height: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.horas{
+    border-right: 1px solid black;
+    width: 20%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.hora{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: black 1px dashed;
+    background-color: rgb(94, 235, 125);
+}
+
+.hora:nth-child(1){
+    border-top: 1px dashed black;
+}
+
+.hora:nth-child(2){
+    border-top: 1px dashed black;
+}
+
+
+.dias{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(225, 231, 225);
+}
+.dia{
+    border-right: 1px solid black;
+    flex-grow: 1;
+}
+.dia:nth-child(5){
+    border-right: none;
+}
+
+.encabezado{
+    border-bottom: 1px dashed rgb(2, 2, 2);
+    text-align: center;
+    padding-top: 20.5px;
+    padding-bottom: 20.5px;
+    background-color: rgb(19, 19, 95);
+    color: aliceblue;
+}
+
+.programacion{
+    position: relative;
+    top: 5px;
+    background-color: rgb(160, 243, 178);
+    border-radius: 10px;
+    width: 94%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 20px;   
+}
+
+.img-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.info p {
+    margin: 5px 0;
+    width: 150px;
+    font-size: 12px;
+}
+
+
+
+.derechos{
+    position: relative;
+    top: 20px;
+    background-color: rgb(101, 183, 216);
+    border-radius: 10px;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 20px; 
+}
+
+
+.derechosv{
+    position: relative;
+    top: 185px;
+    background-color: rgb(101, 183, 216);
+    border-radius: 10px;
+    width: 94%;
+    height: 34%;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 20px; 
+}
+
+.calidadIMG{
+    object-fit: cover;
+}
