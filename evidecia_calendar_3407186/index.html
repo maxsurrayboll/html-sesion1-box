@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styless.css">
     <link rel="stylesheet" href="normalize.css">
-    <title>Document</title>
+    <title>Calendario</title>
 </head>
 <body>
     <!-- menu respose flex-->
@@ -13,7 +13,7 @@
         <div class="main-header__container">
             <!--logo-->
             <div class="main-header__logo">
-                Calendario de Eventos
+                <p class="color-text">Calendario de Eventos</p>
             </div>
             <button  class="main-header__toggle" id="menu-toggle">
                     <div class="main-header__bar"></div>
@@ -24,9 +24,9 @@
          <!--menu principal: se muestra en breackpoins < 500px  -->
          <div class="main-nav" id="main-nav">
             <ul class="main-nav__list">
-                <li class="main-nav__item"> <a href="#" class="main-nav__link">Buscar</a></li>
-                <li class="main-nav__item"><a href="#" class="main-nav__link">Ayuda</a></li>
-                <li class="main-nav__item"><a href="#" class="main-nav__link">Configuracion</a></li>
+                <li class="main-nav__item"> <a href="#" class="main-nav__link"><p class="color-text">Buscar</p></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link"><p class="color-text">Ayuda</p></a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link"><p class="color-text">Configuracion</p></a></li>
             </ul>
          </div>
         </div>
@@ -57,34 +57,155 @@
         </div>
         <div>
             <div class="schedule">
-                <div class="schedule__day">1<div class="day-event">festivo</div></div>
+                <div class="schedule__day">
+                    1
+
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/libre.jpg" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">festivo</h3>
+                                    <p class="event-short">Ir a la iglesia</p>
+                                    <div class="event-detail">
+                                    <p>Hora: 7:30am</p>
+                                    <p>Descripción: Ir con la familia para adorar al señor Xd</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                 <div class="schedule__day">2</div>
                 <div class="schedule__day">3</div>
                 <div class="schedule__day">4</div>
                 <div class="schedule__day">5</div>
-                <div class="schedule__day">6<div class="day-event">cumplealños papa</div></div>
-                <div class="schedule__day">7</div>
+                <div class="schedule__day">
+                    6
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/proyecto.png" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Proyecto Final</h3>
+                                    <p class="event-short">Entrega del trabajo</p>
+                                    <div class="event-detail">
+                                    <p>Hora: 10:30 AM</p>
+                                    <p>Descripción: Presentación y entrega del proyecto final con revisión de requisitos.</p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="schedule__day">
+                    7
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/voleibol.jpg" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Deporte</h3>
+                                    <p class="event-short">practica </p>
+                                    <div class="event-detail">
+                                    <p>Hora: 8:00am</p>
+                                    <p>Descripción: practica Voleibol</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                 <div class="schedule__day">8</div>
                 <div class="schedule__day">9</div>
                 <div class="schedule__day">10</div>
                 <div class="schedule__day">11</div>
                 <div class="schedule__day">12</div>
                 <div class="schedule__day">13</div>
-                <div class="schedule__day">14 <div class="day-event">aseo</div></div>
+                <div class="schedule__day">
+                    14
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/voleibol.jpg" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Deporte</h3>
+                                    <p class="event-short">practica </p>
+                                    <div class="event-detail">
+                                    <p>Hora: 8:00am</p>
+                                    <p>Descripción: practica Voleibol</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                 <div class="schedule__day">15</div>
                 <div class="schedule__day">16</div>
                 <div class="schedule__day">17</div>
-                <div class="schedule__day">18<div class="day-event">clase</div></div>
+                <div class="schedule__day">
+                    18
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/programacion.png" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Clase</h3>
+                                    <p class="event-short">Del sena</p>
+                                    <div class="event-detail">
+                                    <p>Hora: 6:30am</p>
+                                    <p>Descripción: clase de conseptos de html</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                 <div class="schedule__day">19</div>
                 <div class="schedule__day">20</div>
-                <div class="schedule__day">21</div>
+                <div class="schedule__day">
+                    21
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/voleibol.jpg" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Deporte</h3>
+                                    <p class="event-short">practica </p>
+                                    <div class="event-detail">
+                                    <p>Hora: 8:00am</p>
+                                    <p>Descripción: practica Voleibol</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                 <div class="schedule__day">22</div>
                 <div class="schedule__day">23</div>
-                <div class="schedule__day">24<div class="day-event">proyecto final entrega</div></div>
+                <div class="schedule__day">
+                    24
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/proyecto.png" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Proyecto Final</h3>
+                                    <p class="event-short">Entrega del trabajo</p>
+                                    <div class="event-detail">
+                                    <p>Hora: 10:30 AM</p>
+                                    <p>Descripción: Presentación y entrega del proyecto final con revisión de requisitos.</p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
                 <div class="schedule__day">25</div>
                 <div class="schedule__day">26</div>
                 <div class="schedule__day">27</div>
-                <div class="schedule__day">28</div>
+                <div class="schedule__day">
+                    28
+                    <div class="calendar-card">
+                        <div class="card-image">
+                        <img src="./img/voleibol.jpg" alt="Evento">
+                        </div>
+                            <div class="card-content">
+                                    <h3 class="event-title">Deporte</h3>
+                                    <p class="event-short">practica </p>
+                                    <div class="event-detail">
+                                    <p>Hora: 8:00am</p>
+                                    <p>Descripción: practica Voleibol</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
                 <div class="schedule__day">29</div>
                 <div class="schedule__day">30</div>
             </div>
